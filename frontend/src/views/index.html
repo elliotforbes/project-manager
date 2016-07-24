@@ -5,8 +5,10 @@
   <title>Project Management</title>
 
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="../assets/css/main-style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
 
 </head>
 <body ng-controller="AppController">
@@ -29,7 +31,7 @@
       <nav class="navbar navbar-light">
         <div class="nav navbar-nav">
           <a class="nav-item nav-link active" href="#">Home</a>
-          <a class="nav-item nav-link" href="#">Projects</a>
+          <a class="nav-item nav-link" href="#/projects">Projects</a>
           <a class="nav-item nav-link" href="#">Budget</a>
           <a class="nav-item nav-link" href="#">Flats</a>
         </div><!-- .nav -->
@@ -38,7 +40,11 @@
   </div><!-- .secondary-nav -->
 
   <div class="content">
-
+    <div class="container">
+      <div class="row">
+        <div ng-view></div>
+      </div><!-- .row -->
+    </div><!-- .container -->
   </div><!-- .content -->
 
   <div class="footer">
@@ -50,8 +56,12 @@
 
   <!-- Controller Links -->
   <script src="../controllers/ProjectController.js"></script>
+  <script src="../controllers/BudgetController.js"></script>
 
   <!-- Route Links -->
+  <script src="../routes/AppRoutes.js"></script>
+  <script src="../routes/ProjectRoutes.js"></script>
+  <script src="../routes/BudgetRoutes.js"></script>
 
   <!-- Service Links -->
 

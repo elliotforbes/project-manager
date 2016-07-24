@@ -71,3 +71,26 @@ body{
   }
 
 }
+
+.project-box{
+  background-color: $white;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  height: 200px;
+  margin-top: 20px;
+
+  .new{
+    font-size: 100px;
+    color: $dark-gray;
+    text-align: center;
+    margin-top: 25px;
+
+    a:hover{
+      color: $black;
+    }
+
+  }
+
+}

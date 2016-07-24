@@ -40,4 +40,20 @@ body {
       text-decoration: none;
       border-bottom: 2px solid #FF4876; }
 
+.project-box {
+  background-color: #fff;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  height: 200px;
+  margin-top: 20px; }
+  .project-box .new {
+    font-size: 100px;
+    color: #707D90;
+    text-align: center;
+    margin-top: 25px; }
+    .project-box .new a:hover {
+      color: #000; }
+
 /*# sourceMappingURL=main-style.css.map */
