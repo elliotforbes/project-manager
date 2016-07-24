@@ -1,0 +1,18 @@
+<div class="col-lg-3" ng-repeat="flat in flats">
+    <a href="#/project/{{flat.slug}}">
+        <div class="project-box">
+            <img src="http://lorempixel.com/242/140/city" alt="{{ flat.desc }}">
+            <h3>{{ flat.name }}</h3>
+        </div><!-- .project-box -->
+    </a>
+</div><!-- .col-lg-3 -->
+
+<div class="col-lg-3">
+    <div class="project-box">
+    <div class="new">
+        <a href="#/flat/new">
+        <i class="ion-ios-plus-outline"></i>
+        </a>
+    </div><!-- .new -->
+    </div><!-- .project-box -->
+</div><!-- .col-lg-3 -->
